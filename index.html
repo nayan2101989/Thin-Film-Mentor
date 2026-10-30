@@ -341,14 +341,14 @@ a.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
     <div class="how">
       <div><h3>Works offline</h3><p>After the first visit, the calculators, J–V upload, tables, recipe and library all run on your phone with no connection.</p></div>
       <div><h3>The AI mentor</h3><p>"Ask the AI mentor" opens the live version, which uses Claude and needs internet. "Ask" buttons copy your question so you can paste it there.</p></div>
-      <div><h3>Your data stays here</h3><p>Numbers and uploaded files are processed only on your device. Nothing is sent anywhere.</p></div>
+      <div><h3>Your data stays here</h3><p>Numbers and uploaded files are processed only on your device and are never sent anywhere. Only anonymous page visits are counted (no cookies, no personal data).</p></div>
       <div><h3>Found a mistake?</h3><p>Message the builder on <a href="https://www.linkedin.com/in/mehedi1989" target="_blank" rel="noopener">LinkedIn</a>. Verify values against the literature and your own controls.</p></div>
     </div>
   </section>
 
   <div class="safety"><strong>Safety.</strong> Lead-based precursors are toxic and DMF, DMSO and chlorobenzene need fume-hood handling. Follow your lab’s SDS, WHMIS and waste rules. This tool suggests where to look; verify values against the literature and your own controls.</div>
 
-  <footer>Thin-Film Lab Mentor, offline edition, by Mehedi Hasan, EIT, Halifax, NS. Library entries are summaries in the builder's own words; cite the original papers. v1</footer>
+  <footer>Thin-Film Lab Mentor, offline edition, by Mehedi Hasan, EIT, Halifax, NS. Library entries are summaries in the builder's own words; cite the original papers. v2</footer>
   <div class="toast" id="toast" role="status"></div>
 </div>
 
@@ -544,5 +544,6 @@ const standalone=matchMedia("(display-mode: standalone)").matches||navigator.sta
 if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!standalone)document.getElementById("iosnote").hidden=false;
 if("serviceWorker" in navigator&&location.protocol!=="file:")addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 </script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="e9f04f16-5ae0-47c5-9e16-04b415e6b346"></script>
 </body>
 </html>
